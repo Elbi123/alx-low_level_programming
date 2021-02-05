@@ -11,11 +11,11 @@
  */
 int main(void)
 {
-	int n = 981;
+	int n;
 	int last_digit;
 
 	srand(time(0));
-	/* n = rand() - RAND_MAX / 2; */
+	n = rand() - RAND_MAX / 2;
 	/* your code goes there */
 	if (n > 0)
 	{
