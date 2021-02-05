@@ -4,7 +4,7 @@
 #include <stdio.h>
 /* betty style doc for function main goes there */
 /*
- * main - positive or negative
+ * main - Prints either "positive" or "negative"
  * Return: 0 if the condition is satisfied
  */
 int main(void)
@@ -16,15 +16,15 @@ int main(void)
 	/* your code goes there */
 	if (n == 0)
 	{
-	  printf("%d is zero\n", n);
+		printf("%d is zero\n", n);
 	}
 	if (n > 0)
 	{
-	  printf("%d is positive\n", n);
+		printf("%d is positive\n", n);
 	}
 	if (n < 0)
 	{
-	  printf("%d is negative\n", n);
+		printf("%d is negative\n", n);
 	}
 	return (0);
 }
