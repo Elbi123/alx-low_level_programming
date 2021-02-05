@@ -3,9 +3,9 @@
 /* more headers goes there */
 #include <stdio.h>
 /* betty style doc for function main goes there */
-/*
- * main - Prints either "positive" or "negative"
- * Return: 0 if the condition is satisfied
+/**
+ * main - prints either "positive" or "negative"
+ * Return:  zero  if the condition is satisfied
  */
 int main(void)
 {
