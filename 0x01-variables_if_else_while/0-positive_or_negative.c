@@ -3,6 +3,9 @@
 /* more headers goes there */
 #include <stdio.h>
 /* betty style doc for function main goes there */
+/*
+ * main - positive or negative
+ */
 int main(void)
 {
 	int n;
