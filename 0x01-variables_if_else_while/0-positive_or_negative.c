@@ -3,8 +3,6 @@
 /* more headers goes there */
 #include <stdio.h>
 /* betty style doc for function main goes there */
-use strict;
-use warnings;
 int main(void)
 {
 	int n;
