@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - prints numbers less than 10
+ * main - prints alphate in reverse order
  * Return:  zero  if success
  */
 int main(void)
