@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - prints alphabet in lower and uppercase
+ * main - prints all combination of single digit numbers
  * Return:  zero  in success
  */
 int main(void)
