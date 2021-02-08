@@ -1,6 +1,3 @@
-#include <ctype.h>
-#include "holberton.h"
-
 /**
  * _islower - check the code for lowercase.
  *@c: integer parameter
