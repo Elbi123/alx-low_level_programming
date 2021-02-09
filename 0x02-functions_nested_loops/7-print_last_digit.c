@@ -2,7 +2,7 @@
 /**
  * print_last_digit - prints last digit
  *@num: integer
- * Return: Always 0.
+ * Return: the last digits.
  */
 int print_last_digit(int num)
 {
@@ -13,7 +13,7 @@ int print_last_digit(int num)
 		last_digit = num % 10;
 		_putchar(last_digit + '0');
 	}
-	else
+	else if (num < 0)
 	{
 		last_digit = -(num) % 10;
 		_putchar(last_digit + '0');
