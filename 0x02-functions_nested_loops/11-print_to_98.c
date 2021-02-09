@@ -5,9 +5,6 @@
  * @n: number to be processed
  * Return: void.
  */
-void print_greater_than_98(int n);
-
-
 void print_to_98(int n)
 {
 	static int nine = 98;
