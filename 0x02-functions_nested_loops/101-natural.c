@@ -3,7 +3,9 @@
 
 int main(void)
 {
-	int n = 1024;
+	int n;
+	printf("Enter the number: ");
+	scanf("%d", n)
 	int total = 0;
 	int i = 1;
 	while (i < n)
@@ -15,5 +17,6 @@ int main(void)
 		i++;
 	}
 	printf("%d\n", total);
+	return (0);
 }
 
