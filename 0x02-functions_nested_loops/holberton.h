@@ -11,3 +11,7 @@ void times_table(void);
 int add(int, int);
 void print_to_98(int n);
 void print_times_table(int n);
+void print_three(void);
+void print_two(void);
+void print_none(int);
+int print_sum(int);
