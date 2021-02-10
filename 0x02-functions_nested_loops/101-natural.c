@@ -11,11 +11,19 @@ int main(void)
 
 	printf("Enter the number: ");
 	scanf("%d", &n);
+	printf("%d", print_sum(n));
+	printf("\n");
 
+	
+	return (0);
+}
+
+int print_sum(int number)
+{
 	int total = 0;
 	int i = 1;
 
-	while (i < n)
+	while (i < number)
 	{
 		if (i % 3 == 0 || i % 5 == 0)
 		{
@@ -23,7 +31,5 @@ int main(void)
 		}
 		i++;
 	}
-	printf("%d\n", total);
-	return (0);
+        return (total);
 }
-
