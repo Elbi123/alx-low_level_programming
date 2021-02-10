@@ -1,15 +1,16 @@
 #include "holberton.h"
 /**
- * times_table - prints multiplication table.
- *
- * Return: void.
+ * print_times_table - prints multiplication table.
+ * @n: integer number
+ * Return: void
  */
 void print_times_table(int n)
 {
 	if (n < 0 || n > 15)
 	{
-		return ;
+		return;
 	}
+
 	int i = 0;
 
 	while (i <= n)
@@ -19,9 +20,10 @@ void print_times_table(int n)
 		while (j <= n)
 		{
 			int product = i * j;
+
 			if ((product) <= 9)
 			{
-				if (j >= 1 && j <= (n-1))
+				if (j >= 1 && j <= (n - 1))
 				{
 					_putchar(' ');
 				}
@@ -37,6 +39,7 @@ void print_times_table(int n)
 				int arr[3];
 				int i = 0;
 				int j, r;
+
 				while (product != 0)
 				{
 					r = product % 10;
@@ -49,20 +52,38 @@ void print_times_table(int n)
 					_putchar(arr[j] + '0');
 				}
 			}
-			if ( j <= (n-1) && (i * j) < 100)
+			if (j <= (n - 1) && (i * j) < 100)
 			{
-				_putchar(',');
-				_putchar(' ');
-				_putchar(' ');
+				print_three();
 			}
-			else if (j <= (n-1) && (i * j) >= 100)
+			else if (j <= (n - 1) && (i * j) >= 100)
 			{
-				_putchar(',');
-				_putchar(' ');
+				print_two();
 			}
 			j++;
 		}
 		_putchar('\n');
 		i++;
 	}
+}
+
+/**
+ * print_three - prints a comma and two blank space
+ * Return: void
+ */
+void print_three(void)
+{
+	_putchar(',');
+	_putchar(' ');
+	_putchar(' ');
+}
+
+/**
+ * print_two - prints a comma and one blank space
+ * Return: void
+ */
+void print_two(void)
+{
+	_putchar(',');
+	_putchar(' ');
 }
