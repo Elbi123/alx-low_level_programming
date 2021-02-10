@@ -13,11 +13,13 @@ int main(void)
 	scanf("%d", &n);
 	printf("%d", print_sum(n));
 	printf("\n");
-
-	
 	return (0);
 }
-
+/**
+ * print_sum - prints the sum
+ * @number: integer number
+ * Return: the total
+ */
 int print_sum(int number)
 {
 	int total = 0;
@@ -31,5 +33,5 @@ int print_sum(int number)
 		}
 		i++;
 	}
-        return (total);
+	return (total);
 }
