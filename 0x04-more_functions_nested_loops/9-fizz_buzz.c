@@ -12,23 +12,25 @@ int main(void)
 }
 /**
  * fizz_buzz_test - prints fizz buzz
- *
+ * @n: int value
  * Return: void.
  */
 void fizz_buzz_test(void)
 {
+	int n;
+	scanf("%d", &n);
 	char fizz[10] = "Fizz";
 	char buzz[10] = "Buzz";
 	char fizzbuzz[10] = "FizzBuzz";
 	int i = 1;
 
-	while (i <= 100)
+	while (i <= n)
 	{
 		if (i % 3 == 0 && i % 5 == 0)
 		{
 			printf("%s", fizzbuzz);
 		}
-		if (i % 3 == 0)
+		else if (i % 3 == 0)
 		{
 			printf("%s", fizz);
 		}
