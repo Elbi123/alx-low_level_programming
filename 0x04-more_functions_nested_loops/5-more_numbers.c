@@ -14,21 +14,31 @@ void more_numbers(void)
 		int j;
 
 		j = 0;
-
 		while (j <= 14)
 		{
-			if (j >= 10 && j <= 14)
+			if (j >= 0 && j <= 9)
 			{
-				_putchar((j / 10) + '0');
-				_putchar((j % 10) + '0');
+				print_put(j);
 			}
-			else if (j >= 0 && j <= 9)
+			else if (j >= 10 && j <= 14)
 			{
-				_putchar('0' + j);
+				print_put((j / 10));
+				print_put((j % 10));
 			}
+
 			j++;
 		}
 		_putchar('\n');
 		i++;
 	}
+}
+
+/**
+ * print_put - configure put.
+ * @n: integer value
+ * Return: void
+ */
+void print_put(int n)
+{
+	_putchar(n + '0');
 }
